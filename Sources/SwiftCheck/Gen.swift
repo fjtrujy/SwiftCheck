@@ -478,7 +478,7 @@ private func pick<A>(_ n : Int, _ lst : [(Int, Gen<A>)]) -> Gen<A> {
 	return pick(n - k, tl)
 }
 
-#if os(Linux)
+#if canImport(Glibc)
 	import Glibc
 #else
 	import Darwin

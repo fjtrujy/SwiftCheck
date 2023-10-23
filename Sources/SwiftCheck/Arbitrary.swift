@@ -370,7 +370,7 @@ extension Mirror : Arbitrary {
 	}
 }
 
-#if os(Linux)
+#if canImport(Glibc)
 	import Glibc
 #else
 	import Darwin

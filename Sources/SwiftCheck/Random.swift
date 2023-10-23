@@ -380,7 +380,7 @@ private func clock_gettime(_ : Int, _ t : UnsafeMutablePointer<timespec>) -> Clo
 	return .success
 }
 
-#if os(Linux)
+#if canImport(Glibc)
 	import Glibc
 #else
 	import Darwin

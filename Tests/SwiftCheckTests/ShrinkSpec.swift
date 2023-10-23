@@ -12,7 +12,7 @@ import XCTest
 import FileCheck
 #endif
 
-#if os(Linux)
+#if canImport(Glibc)
 	import Glibc
 #else
 	import Darwin

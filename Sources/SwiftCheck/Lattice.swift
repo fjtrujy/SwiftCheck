@@ -102,7 +102,7 @@ extension AnyIndex : LatticeType {
 //    }
 //}
 
-#if os(Linux)
+#if canImport(Glibc)
 	import Glibc
 
 	// Matches http://www.opensource.apple.com/source/gcc/gcc-934.3/float.h
